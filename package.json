@@ -1,0 +1,30 @@
+{
+  "name": "Library",
+  "version": "0.0.1",
+  "description": "MEAN Stack application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "0.10.x ",
+    "npm": "1.4.x"
+  },
+  "author": "Kini Madzharova",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.10.0",
+    "cookie-parser": "^1.3.3",
+    "express": "^4.10.6",
+    "express-session": "^1.10.2",
+    "jade": "^1.8.2",
+    "mongoose": "^3.8.21",
+    "passport": "^0.2.1",
+    "stylus": "^0.49.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "less": "^2.1.2"
+  }
+}

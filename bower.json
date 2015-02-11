@@ -1,0 +1,27 @@
+{
+  "name": "Library",
+  "version": "0.0.1",
+  "authors": [
+    "Kini <kinka96@abv.bg>"
+  ],
+  "description": "MEAN Stack application",
+  "main": "server.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "toastr": "~2.1.0",
+    "angular": "~1.3.8",
+    "angular-route": "~1.3.8",
+    "bootstrap": "~3.3.1",
+    "angular-resource": "~1.3.10"
+  }
+}

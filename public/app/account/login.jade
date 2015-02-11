@@ -1,0 +1,18 @@
+.navbar-right(ng-controller="LoginCtrl")
+
+	form.navbar-form(ng-hide="identity.isAuthenticated()")
+		.form-group
+			input.form-control(type="text", placeholder="Username-admin", ng-model="user.username")
+			input.form-control(type="password", placeholder="Password-admin", ng-model="user.password")
+		button.btn.btn-primary(ng-click="login(user)") Admin Login
+
+	ul.nav.navbar-nav.navbar-right(ng-show="identity.isAuthenticated()")
+		li.dropdown
+			a.dropdown-toggle(href="", data-toggle="dropdown")
+				| {{ identity.currentUser.firstName + '' + identity.currentUser.lastName}}
+				span.caret
+			ul.dropdown-menu
+				li(ng-show="identity.currentUser.isAdmin()")
+					a(href="#/admin/users") Users
+				li
+					a(href="#" ng-click="logout()") Sign out

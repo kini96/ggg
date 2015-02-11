@@ -1,0 +1,17 @@
+.container
+   div.headar
+      img.img-responsive.img-rounded(src="http://www.img-share.eu/f/images/53/logoEtJSiYc.jpg")
+
+     .row
+        .col-md-3
+           .panel.panel-info
+              .panel-heading.text-center Жанрове
+              .panel-body(ng-include="'partial/main/Genres'")
+        .col-md-6
+           .panel.panel-default
+              .panel-heading.text-center Добре дошли в нашия сайт!
+              .panel-body.text-center(ng-include="'partial/main/News'")
+        .col-md-3
+           .panel.panel-info
+              .panel-heading.text-center Контакти
+              .panel-body(ng-include="'partial/main/contact'")
