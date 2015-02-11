@@ -8,6 +8,11 @@ var routeUserChecks = {
             authenticate: function(auth) {
                 return auth.isAuthorizedForRole('admin');
             }
+        },
+        authenticated: {
+            authenticate: function(auth) {
+                return auth.isAuthenticated();
+            }
         }
     };
 
@@ -19,7 +24,7 @@ var routeUserChecks = {
 		.when('/admin/users', {
 			templateUrl: '/partial/admin/users-list',
 			controller: 'UserListCtrl',
-			resolve: routeRoleChecks.admin
+			resolve: routeUserChecks.adminRole
 		})
 });
 
