@@ -51,16 +51,16 @@ module.exports = function(config) {
 			var salt;
 			var hashedPwd;
 
-			salt = generateSalt();
-			hashedPwd = generateHashedPassword(salt, 'Gggg');
-			User.create({username: 'lib.adm', firstName: 'Gggg', lastName: 'Fhjjmd', salt: salt, hashPass: hashedPwd, roles: ['admin']});
+			//salt = generateSalt();
+			//hashedPwd = generateHashedPassword(salt, 'Gggg');
+			//User.create({username: 'lib.adm', firstName: 'Gggg', lastName: 'Fhjjmd', salt: salt, hashPass: hashedPwd, roles: ['admin']});
 			salt = generateSalt();
 			hashedPwd = generateHashedPassword(salt, 'Iana');
 			User.create({username: 'iana.st', firstName: 'Iana', lastName: 'Stoyanova', salt: salt, hashPass: hashedPwd, roles: ['standard']});
 			salt = generateSalt();
 			hashedPwd = generateHashedPassword(salt, 'Sadika');
-			User.create({username: 'kini96', firstName: 'Sadika', lastName: 'Madjarova', salt: salt, hashPass: hashedPwd, roles: ['standard']});
-			console.log('Users added to database...')
+			User.create({username: 'kini96', firstName: 'Sadika', lastName: 'Madjarova', salt: salt, hashPass: hashedPwd, roles: ['admin']});
+			console.log('Users added to database...');
 		}	
 	});	
 };

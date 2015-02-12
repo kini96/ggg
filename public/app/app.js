@@ -8,7 +8,7 @@ var routeUserChecks = {
             authenticate: function(auth) {
                 return auth.isAuthorizedForRole('admin');
             }
-        },
+       },
         authenticated: {
             authenticate: function(auth) {
                 return auth.isAuthenticated();
