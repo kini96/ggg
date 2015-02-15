@@ -27,6 +27,10 @@ var routeUserChecks = {
 			controller: 'UserListCtrl',
 			resolve: routeUserChecks.adminRole
 		})
+		.when('/addBook', {
+			templateUrl: '/partial/account/addBook',
+			controller: 'AddBookCtrl'
+		})
 		
 });
 
