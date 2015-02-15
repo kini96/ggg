@@ -22,6 +22,10 @@ var routeUserChecks = {
 			templateUrl: '/partial/main/home',
 			controller: 'MainCtrl'
 		})
+		.when('/books', {
+			templateUrl: '/partial/books/books-list',
+			controller: 'BooksListCtrl'
+		})
 		.when('/admin/users', {
 			templateUrl: '/partial/admin/users-list',
 			controller: 'UserListCtrl',
