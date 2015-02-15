@@ -1,6 +1,0 @@
-h2 Book Gallery
-div(ng-repeat="book in books | filter: {genres:1}")
-		div.col-md-3
-			a.thumbnail(href="{{book.image}}")
-				p {{ book.name }}
-				img.gallery(src="{{book.image}}")
