@@ -20,12 +20,14 @@ var routeUserChecks = {
 	$routeProvider
 		.when('/', {
 			templateUrl: '/partial/main/home',
+			controller: 'MainCtrl'
 		})
 		.when('/admin/users', {
 			templateUrl: '/partial/admin/users-list',
 			controller: 'UserListCtrl',
 			resolve: routeUserChecks.adminRole
 		})
+		
 });
 
 app.run(function($rootScope, $location) {
