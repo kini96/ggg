@@ -1,0 +1,8 @@
+.container
+	table.table
+		tr
+			th Title
+			th Published
+		tr(ng-repeat="book in books")
+			td {{book.name}}
+			td {{book.genres}}
